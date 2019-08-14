@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Caslon+Display&display=swap');
 @import 'queries';
+@import 'about';
 
 
 $containe:1090px;
@@ -26,39 +27,8 @@ img {
     position: relative;
     color: white;
     overflow: hidden;
-    background-color: black;
 
 
-    .nav {
-        position: relative;
-        z-index: 1;
-        max-width: 1130px;
-        margin: auto;
-        transition: all .6s ease-in-out;
-
-
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-between;
-
-            #logo {
-                span {
-                    margin-right: 1rem;
-
-                }
-            }
-
-            li {
-                margin: .6rem .1rem;
-                padding: .6rem .1rem;
-                font-size: 1.4rem;
-
-            }
-        }
-    }
 
     &-inner {
         width: 100%;
@@ -106,6 +76,54 @@ img {
 
 }
 
+
+.nav {
+    position: relative;
+    z-index: 1;
+    max-width: 1130px;
+    margin: auto;
+    transition: all .6s ease-in-out;
+
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+
+        #logo {
+            a {
+                text-decoration: none;
+                outline: none;
+                color: white;
+                border: none;
+
+                span {
+                    margin-right: 1rem;
+                }
+            }
+
+        }
+
+        li {
+            margin: .6rem .1rem;
+            padding: .6rem .1rem;
+            font-size: 1.4rem;
+
+            a {
+
+                text-decoration: none;
+                color: white;
+
+
+            }
+        }
+
+
+    }
+}
+
 #between {
     max-width: $containe;
     text-align: center;
@@ -125,6 +143,7 @@ img {
     justify-content: center;
     text-align: center;
     margin-bottom: -1rem;
+    background-color: black;
 
 
 
@@ -139,8 +158,10 @@ img {
         cursor: pointer;
         transition: all .7s ease-in-out;
 
+
         &:hover {
             opacity: .7;
+            transform: scale(1.2)
         }
     }
 
@@ -156,7 +177,7 @@ img {
     background: black;
     color: white;
     padding: 1rem;
-    border-top: 1px solid white;
+
 
     .wrapper {
         max-width: $containe;
