@@ -4,7 +4,15 @@
   height: 80vh;
   overflow: hidden;
   background-color: black;
-  color: white; }
+  color: white;
+  position: relative; }
+  #about .about-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+    #about .about-inner h1 {
+      font-size: 4rem; }
 
 #between.tow {
   text-align: left; }
@@ -22,6 +30,39 @@
 @media (max-width: 750px) {
   .bio {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); } }
+
+.wine {
+  background: url("https://images.pexels.com/photos/5877/red-couple-night-romantic.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500") no-repeat center center/cover;
+  height: 80vh;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  position: relative; }
+  .wine .wine-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+    .wine .wine-inner h1 {
+      font-size: 4rem; }
+
+#gallery {
+  width: 100%;
+  padding: 2rem; }
+  #gallery .list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    #gallery .list img {
+      width: 400px;
+      height: 300px;
+      margin-bottom: -1rem;
+      cursor: pointer;
+      transition: all .7s ease-in-out; }
+
+@media (max-width: 750px) {
+  .list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); } }
 
 *,
 body {

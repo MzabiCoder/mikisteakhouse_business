@@ -6,6 +6,18 @@
     overflow: hidden;
     background-color: black;
     color: white;
+    position: relative;
+
+    .about-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        h1 {
+            font-size: 4rem;
+        }
+    }
 
 }
 

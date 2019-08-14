@@ -1,0 +1,61 @@
+.wine {
+    background: url('https://images.pexels.com/photos/5877/red-couple-night-romantic.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500') no-repeat center center / cover;
+    height: 80vh;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    position: relative;
+
+    .wine-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        h1 {
+            font-size: 4rem;
+
+        }
+    }
+
+}
+
+#gallery {
+    width: 100%;
+    padding: 2rem;
+
+
+
+
+
+    .list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+
+
+
+        img {
+            width: 400px;
+            height: 300px;
+            margin-bottom: -1rem;
+            cursor: pointer;
+            transition: all .7s ease-in-out;
+
+
+        }
+
+
+
+
+    }
+
+}
+
+@media (max-width:750px) {
+    .list {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    }
+}
