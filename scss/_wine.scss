@@ -1,5 +1,5 @@
 .wine {
-    background: url('https://images.pexels.com/photos/5877/red-couple-night-romantic.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500') no-repeat center center / cover;
+    background: url('https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500') no-repeat center center / cover;
     height: 80vh;
     overflow: hidden;
     background-color: black;
@@ -14,6 +14,9 @@
 
         h1 {
             font-size: 4rem;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 3rem;
 
         }
     }
@@ -24,15 +27,14 @@
     width: 100%;
     padding: 2rem;
 
-
-
-
-
     .list {
-        width: 100%;
+        width: 60%;
+        margin: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-
+        justify-content: center;
+        align-items: center;
+        text-align: center;
 
 
 
@@ -54,8 +56,16 @@
 }
 
 @media (max-width:750px) {
-    .list {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
+    #gallery .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hide {
+        display: none;
     }
 }
