@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Libre+Caslon+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cinzel&display=swap");
 #about {
   background: url("https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500") no-repeat center center/cover;
   height: 80vh;
@@ -31,20 +31,20 @@
   .bio {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); } }
 
-.wine {
-  background: url("https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500") no-repeat center center/cover;
+.gallery {
+  background: url("https://images.pexels.com/photos/2225577/pexels-photo-2225577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center/cover;
   height: 80vh;
   overflow: hidden;
   background-color: black;
   color: white;
   position: relative; }
-  .wine .wine-inner {
+  .gallery .gallery-inner {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%; }
-    .wine .wine-inner h1 {
-      font-size: 4rem;
+    .gallery .gallery-inner h1 {
+      font-size: 5rem;
       position: relative;
       z-index: 1;
       margin-bottom: 3rem; }
@@ -77,13 +77,32 @@
   .hide {
     display: none; } }
 
+.wine {
+  background: url("https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500") no-repeat center center/cover;
+  height: 80vh;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  position: relative; }
+  .wine .wine-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+    .wine .wine-inner h1 {
+      font-size: 4rem;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 3rem; }
+
 *,
 body {
-  font-family: 'Libre Caslon Display', serif;
+  font-family: 'Cinzel', serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-weight: normal; }
 
 img {
   width: 100%; }
@@ -114,7 +133,7 @@ img {
     z-index: 1;
     position: relative; }
     #header-inner h1 {
-      font-size: 5rem; }
+      font-size: 3.5rem; }
   #header .ham {
     position: absolute;
     top: 10;
