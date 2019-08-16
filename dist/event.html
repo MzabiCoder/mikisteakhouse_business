@@ -11,12 +11,13 @@
     <script src="https://kit.fontawesome.com/c141728b04.js"></script>
 
 
-    <title>Contact-MikiSteakHouse</title>
+    <title>About-MikiSteakHouse</title>
 </head>
 
 <body>
-    <header id="contact">
+    <header id="event">
         <div class="overlay"></div>
+
         <div class="ham">
             <span></span>
             <span></span>
@@ -35,41 +36,80 @@
                 <li><a href="contact.html">contact</a></li>
             </ul>
         </nav>
-        <div class="contact-inner">
+        <div class="event-inner">
 
-            <h1>contact</h1>
+            <h1>events & private dining</h1>
         </div>
     </header>
 
-    <section id="between">
-        <div class="group">
-            <div class="contacts">
-                <p>Miki SteakeHouse</p>
-                <p>28 first street</p>
-                <p>San Francisco CA 94105</p>
+    <section id="between" class="tow">
+        <form>
+            <div class="one">
+                <div class="names">
+                    <label>First Name *</label>
+                    <input type="text">
+                </div>
+                <div class="names">
+                    <label>Last Name *</label>
+                    <input type="text">
+                </div>
             </div>
-            <div class="contacts">
-                <p>415.675.98765</p>
-                <p>general inquiries:</p>
-                <p>miki@gmik.com</p>
+            <div>
+                <div class="email">
+                    <label>Email Address *</label>
+                    <input type="text">
+                </div>
             </div>
-            <div class="contacts">
-                <p>Open for Dinner</p>
-                <p>Monday-SUnday</p>
-                <p>5:30PM-10PM</p>
-                <p>bar opens at 4:30pm</p>
+            <div>
+                <div class="phone">
+                    <label>Phone *</label>
+                    <div>
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+
+                    </div>
+
+                </div>
             </div>
-        </div>
 
-        <h3>For large parties and special events, please contact info@miki.com</h3>
-        <div class="map" style="-webkit-filter: grayscale(100%);
-        filter: grayscale(100%);">
-            <iframe class="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100940.170737135!2d-122.50763979706468!3d37.7576792757432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1565924181168!5m2!1sen!2sus"
-                width="100%" height="450" frameborder="0" style="border:0" color='black' allowfullscreen></iframe>
+            <div>
+                <div class="company">
+                    <label>Company *</label>
+                    <input type="text">
+                </div>
+            </div>
 
 
-        </div>
+            <div class="event">
+                <label>Event *</label>
+                <input type="text">
+            </div>
+            <div class="date">
+                <label>Event dates *</label>
+                <div>
+                    <input type="text" placeholder="MM">
+                    <input type="text" placeholder="DD">
+                    <input type="text" placeholder="YY">
+
+                </div>
+
+            </div>
+
+            <div>
+                <div class="guests">
+                    <label>Number of Guests *</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="area">
+                <label>Message *</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+
+        </form>
+        <button class="btn">Send My Request</button>
     </section>
 
 
@@ -99,7 +139,7 @@
     <!-- <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <script> particlesJS.load('header-main', 'header-main.json', function () { // console.log('callback - particles-js config loaded'); }); </script> -->
     <script>
         window.sr = ScrollReveal();
-        sr.reveal('.nav ul, .contact-inner h1', {
+        sr.reveal('.nav ul,.about-inner h1 ', {
             duration: 2500,
             origin: 'top',
             distance: '5px'

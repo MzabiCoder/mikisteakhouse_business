@@ -1,0 +1,124 @@
+#event {
+    background: url('https://images.pexels.com/photos/460537/pexels-photo-460537.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500') no-repeat center center / cover;
+    height: 80vh;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    position: relative;
+
+    .event-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        h1 {
+            font-size: 4rem;
+            color: white;
+            z-index: 1;
+
+        }
+    }
+
+}
+
+
+form {
+    width: 80%;
+    margin: auto;
+
+
+    div {
+        margin: .7rem 0;
+    }
+
+    .one {
+        display: flex;
+        justify-content: space-between;
+
+        .names {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+
+            label {
+                padding: .2rem;
+
+            }
+
+
+            input {
+                padding: .5rem 4rem;
+            }
+
+        }
+    }
+
+    .email,
+    .company,
+    .event,
+    .guests,
+    .area {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        label {
+            padding: .2rem;
+
+        }
+
+
+
+        input {
+            padding: .5rem 2rem;
+        }
+    }
+
+
+    .phone,
+    .date {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            padding: .2rem;
+
+        }
+
+        input {
+            width: 100px;
+            margin-right: .5rem;
+            padding: .4rem 0px;
+        }
+    }
+
+}
+
+@media (max-width:800px) {
+    .event-inner {
+        text-align: center;
+
+        h1 {
+            font-size: 1rem;
+
+
+        }
+    }
+
+    .one {
+        flex-wrap: wrap;
+    }
+
+    .phone,
+    .date {
+        input {
+            width: 50px;
+        }
+    }
+
+
+
+
+}

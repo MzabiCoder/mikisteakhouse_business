@@ -5,6 +5,8 @@
 @import 'wine';
 @import 'contact';
 @import 'menu';
+@import 'reservation';
+@import 'event';
 
 
 $containe:1090px;
@@ -58,7 +60,7 @@ img {
         position: relative;
 
         h1 {
-            font-size: 3.5rem;
+            font-size: 4rem;
         }
 
     }
@@ -118,7 +120,7 @@ img {
         li {
             margin: .6rem .1rem;
             padding: .6rem .1rem;
-            font-size: 1.4rem;
+            font-size: 1rem;
 
             a {
 
@@ -212,14 +214,20 @@ img {
             transition: all .4s ease-in-out;
             cursor: pointer;
 
-            &:hover {
-                color: gold;
-            }
         }
     }
 }
 
 @media (max-width:750px) {
+
+    #header-inner {
+
+        h1 {
+            font-size: 3rem;
+        }
+
+    }
+
     #footer {
         align-items: center;
         margin: auto;
