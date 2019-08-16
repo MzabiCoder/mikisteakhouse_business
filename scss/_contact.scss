@@ -1,0 +1,57 @@
+#contact {
+    background: url('https://images.pexels.com/photos/331107/pexels-photo-331107.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500') no-repeat center center / cover;
+    height: 80vh;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    position: relative;
+
+    .contact-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        h1 {
+            font-size: 5rem;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 3rem;
+
+        }
+    }
+
+}
+
+#between .group {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    .contacts {
+        margin: 2rem 0;
+
+        p:nth-child(1) {
+            margin-bottom: 1rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media (max-width:750px) {
+
+    #between .group {
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-inner h1 {
+        font-size: 1rem;
+    }
+}

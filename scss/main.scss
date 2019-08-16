@@ -3,6 +3,7 @@
 @import 'about';
 @import 'gallery';
 @import 'wine';
+@import 'contact';
 
 
 $containe:1090px;
@@ -220,11 +221,17 @@ img {
 @media (max-width:750px) {
     #footer {
         align-items: center;
+        margin: auto;
 
         .wrapper {
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+
+            h3 {
+                text-align: center;
+                align-items: center;
+            }
 
         }
     }
