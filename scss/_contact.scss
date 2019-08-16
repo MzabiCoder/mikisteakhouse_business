@@ -23,6 +23,12 @@
 
 }
 
+.map {
+    padding-top: 3rem;
+    color: black;
+
+}
+
 #between .group {
     width: 80%;
     margin: auto;
@@ -46,12 +52,10 @@
 
     #between .group {
         flex-wrap: wrap;
-        text-align: center;
-        align-items: center;
         justify-content: center;
     }
 
     .contact-inner h1 {
-        font-size: 1rem;
+        font-size: 4rem !important;
     }
 }

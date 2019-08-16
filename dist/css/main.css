@@ -136,6 +136,10 @@
       z-index: 1;
       margin-bottom: 3rem; }
 
+.map {
+  padding-top: 3rem;
+  color: black; }
+
 #between .group {
   width: 80%;
   margin: auto;
@@ -153,11 +157,26 @@
 @media (max-width: 750px) {
   #between .group {
     flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
     justify-content: center; }
   .contact-inner h1 {
-    font-size: 1rem; } }
+    font-size: 4rem !important; } }
+
+#menu {
+  background: url("https://www.seriouseats.com/recipes/images/2016/06/20110516-cowboy-steak-kenji-lopez-alt-1500x1125.jpg") no-repeat center center/cover;
+  height: 80vh;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  position: relative; }
+  #menu #menu-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+    #menu #menu-inner h1 {
+      font-size: 4rem;
+      color: white;
+      z-index: 1; }
 
 *,
 body {

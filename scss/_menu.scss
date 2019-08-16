@@ -1,0 +1,23 @@
+#menu {
+    background: url('https://www.seriouseats.com/recipes/images/2016/06/20110516-cowboy-steak-kenji-lopez-alt-1500x1125.jpg') no-repeat center center / cover;
+    height: 80vh;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    position: relative;
+
+    #menu-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        h1 {
+            font-size: 4rem;
+            color: white;
+            z-index: 1;
+
+        }
+    }
+
+}
