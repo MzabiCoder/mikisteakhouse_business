@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
 #about {
   background: url("https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500") no-repeat center center/cover;
   height: 80vh;
@@ -357,13 +358,19 @@ img {
     padding: 0;
     display: flex;
     justify-content: space-between; }
-    .nav ul #logo a {
-      text-decoration: none;
-      outline: none;
-      color: white;
-      border: none; }
-      .nav ul #logo a span {
-        margin-right: 1rem; }
+    .nav ul #logo {
+      text-align: center;
+      align-items: center; }
+      .nav ul #logo a {
+        text-decoration: none;
+        outline: none;
+        color: white;
+        border: none;
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.6rem;
+        font-weight: bold; }
+        .nav ul #logo a span {
+          margin-right: .4rem; }
     .nav ul li {
       margin: .6rem .1rem;
       padding: .6rem .1rem;
@@ -423,7 +430,70 @@ img {
       transition: all .4s ease-in-out;
       cursor: pointer; }
 
-@media (max-width: 750px) {
+.hamgerberger {
+  position: fixed;
+  top: 3%;
+  left: 3%;
+  z-index: 3;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: none; }
+  .hamgerberger .line {
+    width: 50px;
+    height: 5px;
+    margin-bottom: .5rem;
+    background: white;
+    transition: all .4s ease-in-out; }
+  .hamgerberger.close {
+    transform: rotate(180deg); }
+    .hamgerberger.close .line:nth-child(1) {
+      transform: rotate(45deg) translate(4px, 4px); }
+    .hamgerberger.close .line:nth-child(2) {
+      display: none; }
+    .hamgerberger.close .line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); }
+
+.show {
+  display: block !important; }
+
+.black {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 7rem;
+  display: none; }
+  .black ul {
+    margin: 0;
+    padding: 0; }
+    .black ul li {
+      margin-bottom: 1.2rem;
+      transition: all .5s ease-in-out; }
+      .black ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.7rem;
+        outline: none;
+        font-weight: bold;
+        padding: .3rem 1rem;
+        cursor: pointer;
+        transition: all .5s ease-in-out; }
+        .black ul li a:hover {
+          background: white;
+          border: none;
+          color: black; }
+
+@media (max-width: 680px) {
   #header-inner h1 {
     font-size: 3rem; }
   #footer {
@@ -436,8 +506,10 @@ img {
       #footer .wrapper h3 {
         text-align: center;
         align-items: center; }
-  #logo {
+  .nav {
     display: none; }
+  .hamgerberger {
+    display: block !important; }
   #main {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
     #main img {
