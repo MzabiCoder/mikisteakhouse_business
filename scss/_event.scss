@@ -101,7 +101,7 @@ form {
         text-align: center;
 
         h1 {
-            font-size: 1rem;
+            font-size: 2.5rem !important;
 
 
         }
@@ -116,6 +116,36 @@ form {
         input {
             width: 50px;
         }
+    }
+
+
+
+
+
+    input,
+    textarea {
+        border: .2px solid black;
+
+
+    }
+
+    .phone,
+    .date {
+
+
+        input {
+            width: 100px;
+            margin-bottom: .4rem;
+        }
+    }
+
+
+    .one .names input {
+        width: 270px;
+    }
+
+    form {
+        margin: auto;
     }
 
 

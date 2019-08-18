@@ -289,12 +289,23 @@ form {
   .event-inner {
     text-align: center; }
     .event-inner h1 {
-      font-size: 1rem; }
+      font-size: 2.5rem !important; }
   .one {
     flex-wrap: wrap; }
   .phone input,
   .date input {
-    width: 50px; } }
+    width: 50px; }
+  input,
+  textarea {
+    border: .2px solid black; }
+  .phone input,
+  .date input {
+    width: 100px;
+    margin-bottom: .4rem; }
+  .one .names input {
+    width: 270px; }
+  form {
+    margin: auto; } }
 
 *,
 body {
@@ -487,7 +498,8 @@ img {
         font-weight: bold;
         padding: .3rem 1rem;
         cursor: pointer;
-        transition: all .5s ease-in-out; }
+        transition: all .5s ease-in-out;
+        font-family: 'Cinzel', serif !important; }
         .black ul li a:hover {
           background: white;
           border: none;
