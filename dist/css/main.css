@@ -358,11 +358,11 @@ img {
       padding: 3rem; }
 
 .nav {
-  position: relative;
-  z-index: 1;
-  max-width: 1130px;
-  margin: auto;
-  transition: all .6s ease-in-out; }
+  position: fixed;
+  z-index: 4;
+  transition: all .6s ease-in-out;
+  width: 100%;
+  padding: 0rem 3rem; }
   .nav ul {
     list-style: none;
     margin: 0;
@@ -384,8 +384,7 @@ img {
           margin-right: .4rem; }
     .nav ul li {
       margin: .6rem .1rem;
-      padding: .6rem .1rem;
-      font-size: 1rem; }
+      padding: .6rem .1rem; }
       .nav ul li a {
         text-decoration: none;
         color: white; }
@@ -505,7 +504,7 @@ img {
           border: none;
           color: black; }
 
-@media (max-width: 680px) {
+@media (max-width: 750px) {
   #header-inner h1 {
     font-size: 3rem; }
   #footer {

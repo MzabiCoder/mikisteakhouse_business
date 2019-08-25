@@ -88,11 +88,11 @@ img {
 
 
 .nav {
-    position: relative;
-    z-index: 1;
-    max-width: 1130px;
-    margin: auto;
+    position: fixed;
+    z-index: 4;
     transition: all .6s ease-in-out;
+    width: 100%;
+    padding: 0rem 3rem;
 
 
     ul {
@@ -121,6 +121,7 @@ img {
 
 
 
+
                 span {
                     margin-right: .4rem;
 
@@ -132,7 +133,6 @@ img {
         li {
             margin: .6rem .1rem;
             padding: .6rem .1rem;
-            font-size: 1rem;
 
             a {
 
@@ -334,7 +334,7 @@ img {
 
 
 
-@media (max-width:680px) {
+@media (max-width:750px) {
 
     #header-inner {
 
