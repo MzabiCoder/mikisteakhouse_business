@@ -452,18 +452,24 @@ img {
   display: none; }
   .hamgerberger .line {
     width: 50px;
-    height: 5px;
+    height: 4px;
     margin-bottom: .5rem;
     background: white;
     transition: all .4s ease-in-out; }
+    .hamgerberger .line:nth-child(2) {
+      width: 40px; }
+    .hamgerberger .line:last-child {
+      width: 30px; }
   .hamgerberger.close {
     transform: rotate(180deg); }
     .hamgerberger.close .line:nth-child(1) {
-      transform: rotate(45deg) translate(4px, 4px); }
+      transform: rotate(45deg) translate(4px, 4px);
+      width: 40px; }
     .hamgerberger.close .line:nth-child(2) {
       display: none; }
     .hamgerberger.close .line:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -6px); }
+      transform: rotate(-45deg) translate(7px, -6px);
+      width: 40px; }
 
 .show {
   display: block !important; }
@@ -496,9 +502,9 @@ img {
         outline: none;
         font-weight: bold;
         padding: .3rem 1rem;
-        cursor: pointer;
         transition: all .5s ease-in-out;
-        font-family: 'Cinzel', serif !important; }
+        font-family: 'Cinzel', serif !important;
+        cursor: pointer !important; }
         .black ul li a:hover {
           background: white;
           border: none;
