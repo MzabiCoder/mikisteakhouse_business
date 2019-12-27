@@ -86,10 +86,11 @@
 
 @media (max-width: 750px) {
   #gallery {
-    grid-template-columns: 1fr !important;
-    justify-content: center;
-    align-items: center;
-    text-align: center; } }
+    display: flex;
+    flex-direction: column; }
+    #gallery img,
+    #gallery a {
+      margin-bottom: -.3rem; } }
 
 .wine {
   background: url("https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500") no-repeat center center/cover;
@@ -417,7 +418,8 @@ img {
     #main img:hover {
       opacity: .7;
       transition: all 1s ease-in-out;
-      transform: scale(1.2); }
+      transform: scale(1.2);
+      cursor: pointer; }
 
 #footer {
   width: 100%;
