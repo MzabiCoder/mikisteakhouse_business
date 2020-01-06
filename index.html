@@ -54,10 +54,12 @@
             </ul>
         </nav>
         <div id="header-inner">
-
-            <h1> <span class="one">welcome to</span> <span class="tow"> miki steakhouse</span></h1>
+            <h1 id="id">welcome to miki steakhouse</h1>
         </div>
     </header>
+
+
+
     <section id="between">
         <p class="index">Miki Steakhouse is a modern American steakhouse with Japanese influences. Under the guidance of
             Executive
@@ -66,21 +68,20 @@
             It is among the few American steakhouses to have an in-house butcher. </p>
     </section>
     <section id="main">
-
-        <a onclick='return false'>
+        <a href="">
             <img src="https://images.pexels.com/photos/299351/pexels-photo-299351.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                 alt="">
         </a>
 
-        <a disabled>
+
+        <a href="">
             <img src="https://images.pexels.com/photos/675951/pexels-photo-675951.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                 alt="">
         </a>
-        <a disabled>
+        <a href="">
             <img src="https://images.pexels.com/photos/410648/pexels-photo-410648.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                 alt="">
         </a>
-
     </section>
     <footer id="footer">
         <div class="wrapper">
@@ -101,25 +102,70 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
 
     <script src="./js/main.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
         window.sr = ScrollReveal();
-        sr.reveal('#header .nav ul, #main div,#header-inner h1', {
+        sr.reveal('#header .nav ul, #main div', {
             duration: 2000,
             origin: 'top',
             distance: '5px'
-
-
         });
         sr.reveal('.index', {
             duration: 1200,
             origin: 'top',
             distance: '1000px'
+        });
 
+
+        anime({
+            targets: '.index',
+            translateY: [{
+                    value: 200,
+                    duration: 500
+                },
+                {
+                    value: 0,
+                    duration: 500
+                }
+            ],
+            rotate: {
+                value: '1turn',
+
+            }
         });
     </script>
+
+    <script>
+        const text = document.querySelector('#id')
+        const textContent = text.textContent
+        const split = textContent.split('')
+        text.innerHTML = ""
+
+
+        split.forEach(val => {
+            text.innerHTML += '<span>' + val + '</span>'
+        })
+
+        let char = 0
+        const func = () => {
+            const span = text.querySelectorAll('span')[char]
+            span.classList.add('fade')
+            char++
+            if (char === split.length) {
+                complete()
+                return
+            }
+        }
+        let timer = setInterval(func, 50)
+
+
+        const complete = () => {
+            clearInterval(timer)
+            timer = null
+        }
     </script>
 </body>
 

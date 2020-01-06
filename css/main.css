@@ -72,14 +72,14 @@
     overflow: hidden;
     cursor: pointer;
     opacity: 1;
-    transition: all .6s ease-in-out; }
+    transition: all 0.6s ease-in-out; }
     #gallery img:hover {
-      opacity: .8;
+      opacity: 0.8;
       transform: scale(1.1); }
 
 @media (max-width: 1000px) {
   #gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     text-align: center; } }
@@ -90,7 +90,7 @@
     flex-direction: column; }
     #gallery img,
     #gallery a {
-      margin-bottom: -.3rem; } }
+      margin-bottom: -0.3rem; } }
 
 .wine {
   background: url("https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500") no-repeat center center/cover;
@@ -400,7 +400,8 @@ img {
   padding: 2.3rem 2rem;
   margin: auto; }
   #between p {
-    line-height: 2; }
+    line-height: 2;
+    font-size: 1.2rem; }
 
 #main {
   display: grid;
@@ -514,9 +515,23 @@ img {
           border: none;
           color: black; }
 
+span {
+  opacity: 0;
+  transition: all 1.4s ease-in-out; }
+
+span.fade {
+  opacity: 1; }
+
 @media (max-width: 750px) {
-  #header-inner h1 {
-    font-size: 3rem; }
+  #header-inner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    #header-inner h1 {
+      font-size: 3rem; }
   #footer {
     align-items: center;
     margin: auto; }
