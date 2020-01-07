@@ -11,10 +11,22 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://kit.fontawesome.com/c141728b04.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+
+
 
 
     <title>Event-MikiSteakHouse</title>
 </head>
+<style>
+    #footer h3 {
+        font-size: 1.4rem;
+        margin-top: -.9px;
+    }
+</style>
 
 <body>
     <div class="black">
@@ -62,15 +74,44 @@
     </header>
 
     <section id="between" class="tow">
-        <form>
-            <input type="text" name='name' autocomplete="off" required>
-            <label for="name" class="label-name">
-                <span class="content-name"></span>
-            </label>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Lat Name</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="email" type="text" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="phone" type="text" class="validate">
+                        <label for="phone">Phone</label>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Message</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
 
 
-
-
+                <!-- <form>
             <div class="one">
                 <div class="names">
                     <label>First Name *</label>
@@ -135,8 +176,8 @@
                 <textarea name="" id="" cols="30" rows="10"></textarea>
             </div>
 
-        </form>
-        <button class="btn">Send My Request</button>
+        </form> -->
+                <button class="btn">Send Message</button>
     </section>
 
 
@@ -145,8 +186,10 @@
 
     <footer id="footer">
         <div class="wrapper">
+
             <h3>333 San jose st, San Francisco, CA 94109</h3>
             <h3>4156.987.1234 <span id="sap"></span> JOIN OUR TEAM</h3>
+
             <div class="socials">
                 <i class="fab fa-facebook-f"></i>
                 <i class="fab fa-instagram"></i>
@@ -159,7 +202,7 @@
 
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
@@ -177,7 +220,8 @@
 
         });
     </script>
-    </script>
+
+
 </body>
 
 </html>

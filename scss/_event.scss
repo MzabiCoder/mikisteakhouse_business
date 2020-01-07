@@ -26,6 +26,8 @@
 form {
     width: 80%;
     margin: auto;
+    position: relative;
+
 
 
     div {
@@ -150,5 +152,14 @@ form {
 
 
 
+
+}
+
+.btn {
+    display: block !important;
+    margin: auto !important;
+    width: 100%;
+    background: black !important;
+    cursor: pointer;
 
 }

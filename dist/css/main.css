@@ -242,7 +242,8 @@
 
 form {
   width: 80%;
-  margin: auto; }
+  margin: auto;
+  position: relative; }
   form div {
     margin: .7rem 0; }
   form .one {
@@ -310,6 +311,13 @@ form {
     width: 270px; }
   form {
     margin: auto; } }
+
+.btn {
+  display: block !important;
+  margin: auto !important;
+  width: 100%;
+  background: black !important;
+  cursor: pointer; }
 
 *,
 body {
@@ -400,8 +408,7 @@ img {
   padding: 2.3rem 2rem;
   margin: auto; }
   #between p {
-    line-height: 2;
-    font-size: 1.2rem; }
+    line-height: 2; }
 
 #main {
   display: grid;

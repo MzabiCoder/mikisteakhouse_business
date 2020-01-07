@@ -168,7 +168,6 @@ img {
 
     p {
         line-height: 2;
-        font-size: 1.2rem;
 
     }
 
@@ -323,6 +322,7 @@ img {
     padding-top: 7rem;
 
 
+
     display: none;
 
 
@@ -347,7 +347,6 @@ img {
                 font-family: 'Cinzel', serif !important;
                 cursor: pointer !important;
 
-
                 &:hover {
                     background: white;
                     border: none;
@@ -356,6 +355,8 @@ img {
                 }
 
             }
+
+
         }
     }
 }
