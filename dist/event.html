@@ -82,23 +82,23 @@
             <form class="col s12">
                 <div class="row">
                     <div class="input-field col s6">
-                        <input id="last_name" type="text" class="validate">
-                        <label for="last_name">First Name</label>
+                        <input id="fname" type="text" class="validate">
+                        <label for="last_name" class="labell">First Name</label>
                     </div>
                     <div class="input-field col s6">
-                        <input id="last_name" type="text" class="validate">
-                        <label for="last_name">Lat Name</label>
+                        <input id="lname" type="text" class="validate">
+                        <label for="last_name" class="labelr">Lat Name</label>
                     </div>
 
                 </div>
                 <div class="row">
                     <div class="input-field col s6">
                         <input id="email" type="text" class="validate">
-                        <label for="email">Email</label>
+                        <label for="email" class="labell">Email</label>
                     </div>
                     <div class="input-field col s6">
                         <input id="phone" type="text" class="validate">
-                        <label for="phone">Phone</label>
+                        <label for="phone" class="labelr">Phone</label>
                     </div>
 
                 </div>
@@ -108,7 +108,7 @@
                         <div class="row">
                             <div class="input-field col s12">
                                 <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                <label for="textarea1">Message</label>
+                                <label for="textarea1" id="labele">Message</label>
                             </div>
                         </div>
                     </form>
@@ -223,6 +223,35 @@
 
 
         });
+
+        sr.reveal('#lname,.labelr,#phone', {
+            duration: 2500,
+            origin: 'right',
+            distance: '130px'
+
+
+        });
+
+    
+
+        sr.reveal('#fname,.labell,#email', {
+            duration: 2500,
+            origin: 'left',
+            distance: '130px'
+
+
+        });
+     
+        sr.reveal('#textarea1,#labele', {
+            duration: 2500,
+            origin: 'bottom',
+            distance: '10px'
+
+
+        });
+
+        
+        
     </script>
 
 
