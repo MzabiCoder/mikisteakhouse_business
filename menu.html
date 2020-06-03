@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://kit.fontawesome.com/c141728b04.js"></script>
 
 
@@ -60,7 +60,7 @@
 
     <section id="between">
 
-        <div class="menu1">
+        <div class="menu1" data-aos="fade-right">
             <h2>SMALL PLATES</h2>
             <p>japanese A5 wagyu jerky<span></span> 15/60</p>
             <p>baby greens, green goddess dressing, crispy squash blossom<span></span> 15</p>
@@ -72,7 +72,7 @@
             <p>salmon tartare, aguachile, avocado, cultured coconut<span></span> 16</p>
         </div>
 
-        <div class="menu1">
+        <div class="menu1" data-aos="fade-left">
             <h2>LARGE PLATES</h2>
             <p>7oz monterey king salmon<span></span> 40</p>
             <p>24oz 40 day dry aged bone-in prime ribeye <span></span> 45</p>
@@ -82,7 +82,7 @@
 
         </div>
 
-        <div class="menu1">
+        <div class="menu1" data-aos="fade-right">
             <h2>SIDES </h2>
             <p>broccoli, chili fish caramel <span></span> 13</p>
             <p>compressed galia melon, thai basil, fish sauce <span></span> 14</p>
@@ -90,7 +90,7 @@
             <p>brentwood corn, shiso , togarashi<span></span> 15</p>
         </div>
 
-        <div class="menu1">
+        <div class="menu1" data-aos="fade-left">
             <h2>DESSERT WINES</h2>
             <p>Chateau d’Yquem, Sauternes 2005<span></span> 60</p>
             <p>Domaine Rolet, Vin de Paille, Arbois 2013 <span></span> 55</p>
@@ -129,13 +129,9 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-
     <script src="./js/main.js"></script>
-
     <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <script> particlesJS.load('header-main', 'header-main.json', function () { // console.log('callback - particles-js config loaded'); }); </script> -->
+
     <script>
         window.sr = ScrollReveal();
         sr.reveal('#menu-inner h1 ', {
@@ -159,6 +155,12 @@
 
         });
     </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000
+        });
     </script>
 </body>
 
