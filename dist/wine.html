@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/simplelightbox.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <link rel="icon" type="image/png" href="images/logo.png" />
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://kit.fontawesome.com/c141728b04.js"></script>
@@ -59,7 +61,7 @@
   </header>
 
   <section id="between">
-    <div class="menu1">
+    <div class="menu1" data-aos="fade-right">
       <h2>SAKE (GL/BTL)</h2>
       <p>Kasumi Tsuru, Kimoto ‘The Crane’<span></span> 15/60</p>
       <p>Minakata, Junmai Ginjo, Wakayama <span></span> 15/60</p>
@@ -74,7 +76,7 @@
       <p>Watari Bune, ‘Ferry Boat,’ Junmai Daiginjo<span></span> 225/p></p>
     </div>
 
-    <div class="menu1">
+    <div class="menu1" data-aos="fade-left">
       <h2>SPARKLING {GL/BTL}</h2>
       <h3>CALIFORNIA & OREGON</h3>
       <p>
@@ -97,7 +99,7 @@
       <p>Sanran, Junmai Daiginjo<span></span> 225/p></p>
     </div>
 
-    <div class="menu1">
+    <div class="menu1" data-aos="fade-right">
       <h2>SPARKLING (BTL)</h2>
       <h3>FRANCE</h3>
       <p>Pierre Peters, ‘Cuvee Reserve,’ Brut NV<span></span> 15/60</p>
@@ -108,7 +110,7 @@
       </p>
     </div>
 
-    <div class="menu1">
+    <div class="menu1" data-aos="fade-left">
       <h2>INTERESTING WHITES {GL/BTL}</h2>
       <p>Cooper Mountain, ‘Old Vine,’ Pinot Gris 2017<span></span> 15/60</p>
       <p>
@@ -136,7 +138,7 @@
       <p>Stony Hill, Riesling, Spring Mountain 2017<span></span> 90</p>
     </div>
 
-    <div class="menu1">
+    <div class="menu1" data-aos="fade-right">
       <h2>SPARKLING {GL/BL}</h2>
       <h3>OREGON</h3>
       <p>
@@ -163,7 +165,7 @@
       <p>Agrapart, '7 Crus,' Brut NV<span></span> 90</p>
     </div>
 
-    <div class="menu1">
+    <div class="menu1" data-aos="fade-left">
       <h2>{HL/BT}</h2>
       <h3>FRANCE</h3>
       <p>
@@ -201,13 +203,10 @@
   </footer>
 
 
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
 
   <script src="./js/main.js"></script>
 
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <!-- <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <script> particlesJS.load('header-main', 'header-main.json', function () { // console.log('callback - particles-js config loaded'); }); </script> -->
+
   <script>
     window.sr = ScrollReveal();
     sr.reveal(".wine-inner h1 ", {
@@ -216,14 +215,14 @@
       distance: "5px"
     });
   </script>
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-  <script src="js/simple-lightbox.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    $(function () {
-      const $gallery = $(".list div a").simpleLightbox();
+    AOS.init({
+      offset: 400,
+      duration: 1000
     });
   </script>
+
 </body>
 
 </html>
