@@ -633,16 +633,53 @@ span.fade {
     justify-content: space-between;
     padding-top: 2rem; }
     #footer .wrapper #sap {
-      margin-right: 1rem; }
+      margin-right: 1rem;
+      position: relative; }
+      #footer .wrapper #sap:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 0%;
+        padding-top: .2rem;
+        border-bottom: 1px solid white;
+        display: block;
+        transition: all .5s ease-in-out; }
+      #footer .wrapper #sap:hover:after {
+        width: 100%; }
     #footer .wrapper h3 {
       border-bottom: none;
       transition: all .4s ease-in-out;
-      cursor: pointer; }
+      cursor: pointer;
+      position: relative; }
+      #footer .wrapper h3:nth-child(1):after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 0%;
+        padding-top: .2rem;
+        border-bottom: 1px solid white;
+        display: block;
+        transition: all .5s ease-in-out; }
+      #footer .wrapper h3:nth-child(1):hover:after {
+        width: 100%; }
     #footer .wrapper .socials i {
       margin: .6rem;
       font-size: 2rem;
       transition: all .4s ease-in-out;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+      position: relative; }
+      #footer .wrapper .socials i:after {
+        content: '';
+        display: block;
+        border-bottom: 1px solid white;
+        width: 0%;
+        position: absolute;
+        left: 0;
+        transition: all .4s ease;
+        padding-top: .3rem; }
+      #footer .wrapper .socials i:hover:after {
+        width: 100%; }
 
 @media (max-width: 1000px) {
   .gallery_index {
