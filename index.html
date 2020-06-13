@@ -17,6 +17,9 @@
 
 
 <body>
+    <div id="general">
+        <h1 id="id">welcome to miki steakhouse</h1>
+    </div>
 
     <div class="black">
         <ul id="animation">
@@ -54,9 +57,9 @@
                 <li><a href="contact.html">contact</a></li>
             </ul>
         </nav>
-        <div id="header-inner">
+        <!-- <div id="header-inner">
             <h1 id="id">welcome to miki steakhouse</h1>
-        </div>
+        </div> -->
     </header>
 
 
@@ -226,6 +229,9 @@
     </footer>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script>
+         setTimeout(() => {
+            document.querySelector('#general').style.opacity = '0'
+        }, 4000)
         var controller = new ScrollMagic.Controller();
         new ScrollMagic.Scene({
                 triggerElement: '.slider'
