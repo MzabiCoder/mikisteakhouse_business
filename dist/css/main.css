@@ -96,7 +96,7 @@
 .wine {
   background: url("https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500") no-repeat center center/cover;
   height: 80vh;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: black;
   color: white;
   position: relative; }
@@ -170,7 +170,7 @@
 #menu {
   background: url("https://www.seriouseats.com/recipes/images/2016/06/20110516-cowboy-steak-kenji-lopez-alt-1500x1125.jpg") no-repeat center center/cover;
   height: 80vh;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: black;
   color: white;
   position: relative; }
@@ -398,7 +398,7 @@ img {
   z-index: 4;
   transition: all .6s ease-in-out;
   width: 100%;
-  padding: 0rem 3rem; }
+  padding: .7rem 1rem; }
   .nav ul {
     list-style: none;
     margin: 0;
@@ -431,7 +431,8 @@ img {
   max-width: 1090px;
   text-align: center;
   margin: 3rem auto;
-  margin: auto; }
+  margin: auto;
+  overflow: hidden; }
   #between p {
     line-height: 2; }
 
@@ -703,6 +704,10 @@ span.fade {
         width: 100%; }
 
 @media (max-width: 1000px) {
+  .nav ul #logo a {
+    font-size: 1rem; }
+  .nav ul li a {
+    font-size: 1rem; }
   .gallery_index {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2rem; } }
@@ -734,4 +739,14 @@ span.fade {
   .hamgerberger {
     display: block !important; }
   #main {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  #between {
+    max-width: 1090px;
+    text-align: center;
+    margin: 3rem auto;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden; }
+    #between p {
+      line-height: 1.5;
+      font-size: .9rem; } }
