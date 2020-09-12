@@ -62,6 +62,7 @@ img {
     opacity: 1;
     h1{
         font-size: 4rem;
+        padding: 0 1rem;
     }
 }
 
@@ -608,6 +609,7 @@ span.fade {
     width: 100%;
     background: black;
     color: white;
+    padding: 0 2rem;
 
 
 
@@ -618,7 +620,7 @@ span.fade {
         margin: auto;
         display: flex;
         justify-content: space-between;
-        padding-top: 2rem;
+        padding-top: 1rem;
 
 
         #sap {
@@ -646,7 +648,6 @@ span.fade {
             transition: all .4s ease-in-out;
             cursor: pointer;
             position: relative;
-
             &:nth-child(1) {
                 &:after {
                     content: '';
@@ -671,31 +672,37 @@ span.fade {
 
 
 
-        .socials i {
-            margin: .6rem;
-            font-size: 2rem;
-            transition: all .4s ease-in-out;
-            cursor: pointer;
-            transition: all .2s ease-in-out;
-            position: relative;
-
-
-            &:after {
-                content: '';
-                display: block;
-                border-bottom: 1px solid white;
-                width: 0%;
-                position: absolute;
-                left: 0;
-                transition: all .4s ease;
-                padding-top: .3rem;
+        .socials 
+        {
+           
+            i {
+                margin: .6rem;
+                margin-top: -1rem;
+                font-size: 2rem;
+                transition: all .4s ease-in-out;
+                cursor: pointer;
+                transition: all .2s ease-in-out;
+                position: relative;
+    
+    
+                &:after {
+                    content: '';
+                    display: block;
+                    border-bottom: 1px solid white;
+                    width: 0%;
+                    position: absolute;
+                    left: 0;
+                    transition: all .4s ease;
+                    padding-top: .3rem;
+                }
+    
+                &:hover:after {
+                    width: 100%;
+                }
+    
             }
-
-            &:hover:after {
-                width: 100%;
-            }
-
         }
+        
 
     }
 }
@@ -715,9 +722,31 @@ span.fade {
         grid-gap: 2rem;
     }
 }
-
+@media (max-width:768px) {
+    
+    #footer .wrapper h3{
+       font-size: .8rem;
+    }
+    #footer .wrapper .socials i{
+        font-size: 1rem;
+       
+     }
+}
+@media (max-width:280px) {
+    
+    .about-inner h1,.wine-inner h1,#menu-inner h1,.contact-inner h1, .event-inner h1,.gallery-inner h1,#reser-inner h1{
+        font-size: 2rem!important;
+    }
+}
+@media (max-width:1024px) {
+    #footer {
+       padding:1rem;
+    }
+    
+}
 
 @media (max-width:750px) {
+     
     .gallery_index {
 
         grid-template-columns: 1fr;
@@ -790,4 +819,6 @@ span.fade {
         font-size: 2rem!important;
     }
 }
+
+ 
 

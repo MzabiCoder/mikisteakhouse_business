@@ -363,7 +363,8 @@ img {
   transition: all .7s ease-in-out;
   opacity: 1; }
   #general h1 {
-    font-size: 4rem; }
+    font-size: 4rem;
+    padding: 0 1rem; }
 
 #header {
   background: url("https://images.pexels.com/photos/3997609/pexels-photo-3997609.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500") no-repeat center center/cover;
@@ -647,13 +648,14 @@ span.fade {
 #footer {
   width: 100%;
   background: black;
-  color: white; }
+  color: white;
+  padding: 0 2rem; }
   #footer .wrapper {
     max-width: 1090px;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding-top: 2rem; }
+    padding-top: 1rem; }
     #footer .wrapper #sap {
       margin-right: 1rem;
       position: relative; }
@@ -686,6 +688,7 @@ span.fade {
         width: 100%; }
     #footer .wrapper .socials i {
       margin: .6rem;
+      margin-top: -1rem;
       font-size: 2rem;
       transition: all .4s ease-in-out;
       cursor: pointer;
@@ -711,6 +714,20 @@ span.fade {
   .gallery_index {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2rem; } }
+
+@media (max-width: 768px) {
+  #footer .wrapper h3 {
+    font-size: .8rem; }
+  #footer .wrapper .socials i {
+    font-size: 1rem; } }
+
+@media (max-width: 280px) {
+  .about-inner h1, .wine-inner h1, #menu-inner h1, .contact-inner h1, .event-inner h1, .gallery-inner h1, #reser-inner h1 {
+    font-size: 2rem !important; } }
+
+@media (max-width: 1024px) {
+  #footer {
+    padding: 1rem; } }
 
 @media (max-width: 750px) {
   .gallery_index {
