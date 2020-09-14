@@ -649,7 +649,7 @@ span.fade {
   width: 100%;
   background: black;
   color: white;
-  padding: 0 2rem; }
+  padding: 1rem 2rem; }
   #footer .wrapper {
     max-width: 1090px;
     margin: auto;
@@ -769,3 +769,7 @@ span.fade {
       font-size: .9rem; }
   #id {
     font-size: 2rem !important; } }
+
+@media (max-width: 281px) {
+  #footer .wrapper #sap {
+    margin-left: -4rem; } }
